@@ -1,6 +1,3 @@
-# complex_exponentials
-Presentation source code for AISNSW Mathematics Heads of Department Conference on complex exponentials.
-
 # Abstract
 Complex Numbers make up a core study of the Mathematics Extension II course. One of the newest and notable additions to the new syllabus is the Euler Formula of a Complex Number, which opens up discussion about Complex valued functions that were not otherwise possible in the old syllabus.
 
