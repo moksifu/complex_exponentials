@@ -1,3 +1,6 @@
+## .tmp folder
+.tmp/*
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
