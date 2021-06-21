@@ -1,0 +1,90 @@
+Topic: Exponentials of Complex Numbers
+Syllabus Content Outcomes addressed: MEX-N2.1
+
+Opening question:
+Here's a few questions to warm you up for the session to see if you're awake!
+
+DESMOS Link:
+https://www.desmos.com/calculator/szywgvtxm8
+
+Select the correct answers (there may be more than one)
+1. Solve for x in N: x^2 = 4
+A) x = 2 B) x = 4^{1/2} C) x = \pm 2 D) \sqrt{4}
+
+[A and B and D]
+
+2. Solve for x in R: x^2 = 4
+A) x = 2 B) x = 4^{1/2} C) x = \pm 2 d) \sqrt{4}
+
+[C]
+
+3. Solve for x in C: x^2 = 4
+A) x = 2 B) x = 4^{1/2} C) x = \pm 2 D) \sqrt{4}
+
+[B and C]
+
+Why?
+
+Let's have a look at De Moivre's Theorem:
+
+Most of us know it as this: (show DMT without the underlying assumptions)
+
+This question is actually very similar to when I ask students: What is Pythagoras' Theorem? Most of the time, they answer c^2 = a^2 + b^2, but we all know that this only works in a right angled triangle.
+This underlying assumption in the theorem is almost always left out and only the c^2 = a^2 + b^2 part is given.
+
+So in De Moivre's Theorem, leaving it as this without the undrelying assumptions is similar to leaving off the assumption that c^2 = a^2 + b^2 only works in a right angled triangle.
+
+De Moivre's Theorem, as described in the HSC syllabus as well, is this: (show the assumption)
+
+Note that it only works for integers. This assumption is there to guarantee the exponential function with complex numbers yields only one value for all arguments of the complex number.
+
+(Show DESMOS interactive)
+
+If we want to extend DMT to rational numbers, this is what will happen:
+
+(Show example of 1 written as argument of 0 and of 2pi, powered to 1/2)
+
+The exponential of a complex number becomes multi-valued - which in the HSC we teach the terminology that it is not a function but a one-to-many relation. I personally prefer the terminology multi-valued function.
+
+You'll also recognise that this process is just what we teach in Roots of Unity. Here's a typical working out of a roots of unity question:
+(show working for roots of unity)
+
+Let's also check out the DESMOS interactive for rational powers of complex numbers.
+
+(Show DESMOS interactive)
+
+This brings us back to that opening question at the start of the session:
+4^{1/2} as a complex exponential function already gives us the necessary plus or minus.
+
+However, notice that sqrt{4} is still not a correct answer. This is because we want that sqrt notation to be single-valued, and to do this, we restrict the domain to be the principal argument only, and we call this the principal square root. In the context of real numbers, we call it the positive square root. However, the exponential notation remains multi-valued.
+(Show sqrt{4} = 2, 4^{1/2} = \pm 2 with working out)
+
+Yes, this does look weird as we are used to working with single-valued functions, but we have to remember that so many functions don't behave like their real counterparts in the complex domain. Further detailed study into these type of complex functions is its branch in mathematics called Complex Analysis.
+
+This leads onto the question: What even is an exponential function then? Hold onto that thought, we'll come back to that one.
+
+Let's now have a look at what happens when we want to exponentiate with an irrational number.
+
+The rational powers divide the revolutions of the arguments really nicely, a power of 1/3 divides all revolutions into 3 parts. Irrational numbers unfortunately, do not. So something like 1^{\pi} actually has infinite values - let's have a look at this in DESMOS. A number like (-1)^\sqrt{2} also has infinite values.
+
+Now, the ultimate question: What if we want to raise a number to a complex power?
+
+In my opinion, this kind of question is now something we can discuss with students in the new syllabus as it introduces the Euler Formula e^{ix}, whereas in the old syllabus, it kept that can of worms closed.
+
+-> Explain complex logarithm from e^y = z, y = log_e(|z|) + i*arg(z)
+
+Let's have a look at i^i:
+-> Show working for i^i => there are infinite values
+
+So what is an exponential anyway? Let's have a look at the story of how we learn about them in the NSW Stages.
+Stage 4: A power is how many times that base multiplies itself. f: N -> N
+
+Stage 5: Fractional powers and negative powers basically makes the Stage 4 understanding of exponentials redundant. How can you multiply a number -1/2 times?
+
+Stage 6: We learn about the number of e. Jacob Bernoulli derived this value in 1683 when asking the question what happens when you compound a principal amount of $1 at an ever increasing compounding period for a year. This let's us now arrive at the definition of e^x as lim_{n\rightarrow \infty} (1 + \frac{1}{n})^n. By using the binomial theorem and some techniques in mathematical analysis, we arrive at an equivalent definition e^x = (sum version).
+This would probably make for an interesting project or investigation task.
+
+You can develop this understanding of complex exponentials in your 4U students by:
+- Developing the theory of where e^x comes from.
+- Stressing the importance of integer exponents in DMT.
+- Teach roots of unity as an extension of DMT to rational exponents.
