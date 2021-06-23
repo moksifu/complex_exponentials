@@ -3,7 +3,7 @@
 \usepackage{capt-of}
 \usepackage[american]{babel}
 \usepackage{csquotes}
-\usepackage[style=apa,sorting=nyt,backend=biber]{biblatex}
+\usepackage[style=ieee,backend=biber]{biblatex}
 
 
 \usetheme{Madrid}
@@ -14,6 +14,7 @@
 
 \DeclareLanguageMapping{american}{american-apa}
 \addbibresource{biblio.bib}
+\setbeamertemplate{bibliography item}{\insertbiblabel}
 
 %------------------------------------------------------------
 %This block of code defines the information to appear in the
@@ -99,7 +100,7 @@ Answers:
 %Highlighting text
 \begin{frame}
 \frametitle{De Moivre's Theorem}
-\begin{block}{De Moivre's Theorem (DMT)\\\parencite{syllabus}}
+\begin{block}{De Moivre's Theorem (DMT)\parencite{syllabus}}
   \begin{itemize}
     \item[]<3-> For all \alert{integers $n$}
     \item[]<1-> \[[r(\cos\theta + i \sin\theta)]^n = r^n(\cos(n\theta) + i\sin(n\theta))\]
@@ -219,8 +220,8 @@ This opens up new avenues of discussion that were previously not possible in the
   \pause
   Does such a function $\log: \mathbb{C}\backslash\{0\} \rightarrow \mathbb{C}$ that is the inverse of complex exponentiation exist? Yes it does - proof beyond the time we have now.
   \pause
-  \begin{block}{(Principal) Complex Logarithm \parencite[p.~126]{daners}}
-    \[\mbox{Log} z = \log_e |z| + i\mbox{Arg} z\]
+  \begin{block}{Complex Logarithm \parencite[p.~23]{apostol}}
+    If $z$ is a complex number $\not = 0$, then there exist complex numbers $\omega$ such that $e^\omega = z$ where $\omega$ is in the form $\log_e|z| + i\mbox{Arg}z + 2n\pi i$ where $n\in\mathbb{Z}$.
   \end{block}
 \end{frame}
 
