@@ -228,21 +228,21 @@ This opens up new avenues of discussion that were previously not possible in the
 \begin{frame}
   \frametitle{Complex Exponential Equations}
   \begin{example}
-    Solve for $z \in \mathbb{C}: e^z = 1$.
+    Solve for $z \in \mathbb{C}: e^z = -1$.
     \pause
     \begin{align*}
-      z & = \log(1)\\
-        & = \log_e|1| + i\arg(1)\\
-        & = 0 + i\arg(1)\\
-        & = i2k\pi \mbox{ for } k \in \mathbb{Z}
+      z & = \log(-1)\\
+        & = \log_e|-1| + i\arg(-1)\\
+        & = 0 + i\arg(-1)\\
+        & = i(2k+1)\pi \mbox{ for } k \in \mathbb{Z}
     \end{align*}
   \end{example}
   \pause
-  If we test any of these solutions such as $z_1 = i2\pi$:
+  If we test any of these solutions such as $z_1 = i3\pi$:
   \begin{align*}
-    e^{z_1} & = e^{i2\pi} = 1
+    e^{z_1} & = e^{i3\pi} = \cos(3\pi) + i \sin(3\pi) = -1
   \end{align*}
-  Hence, $i2\pi$ is indeed a solution to $e^z = 1$.
+  Hence, $i3\pi$ is indeed a solution to $e^z = -1$.
 \end{frame}
 
 \begin{frame}
