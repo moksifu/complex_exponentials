@@ -337,17 +337,6 @@ This opens up new avenues of discussion that were previously not possible in the
 \end{frame}
 
 \begin{frame}
-  \frametitle{What is an exponential?}
-  \begin{block}{So what is an exponential? \parencite[p.~46]{ahlfors}}
-    $a^b$ is equivalent to $\exp(b \log a)$.
-
-    If $a$ is restricted to positive numbers, $\log a$ shall be real and $a^b$ has a single value.
-
-    Otherwise, $\log a$ is the complex logarithm and $a^b$ has in general infinitely many values.
-  \end{block}
-\end{frame}
-
-\begin{frame}
   \begin{block}{Plots of increasing $n$ for $(1 + \frac{x}{n})^n$}
   DESMOS Interactive: \url{https://www.desmos.com/calculator/p4rzq24eck}\\
   Plots of $(1+\frac{x}{n})^n$ for $x = 1$ or $x=i\pi$ and differing values of $n$ are shown below:
@@ -381,6 +370,26 @@ This opens up new avenues of discussion that were previously not possible in the
     \includegraphics[width=0.47\textwidth]{complex_exp_1000.png}
     \captionof{figure}{$(1+\frac{x}{1000})^n$ for $n=1,2,\ldots,1000$}
   \end{minipage}
+\end{frame}
+
+\begin{frame}
+  \frametitle{What is an exponential?}
+  \begin{block}{What does $a^b$ really mean?}
+    \pause
+    $a^b$ is equivalent to $\exp(b \log a)$ \parencite[p.~46]{ahlfors}.
+
+    Ahlfors \cite{ahlfors} adopts the convention that if $a$ is restricted to positive numbers, $\log a$ shall be real (unless the contrary is stated) and $a^b$ has a single value.
+
+    Otherwise, $\log a$ is the complex logarithm and $a^b$ has in general infinitely many values.
+  \end{block}
+  \pause
+  We already need, and use, this definition in deriving Calculus results such as:
+  \begin{align*}
+    y & = a^x\\
+      & = e^{\log_e(a^x)}\\
+      & = e^{x\log_e(a)}\\
+    \frac{dy}{dx} & = \log_e(a)e^{x\log_e(a)} = \log_e(a)a^x
+  \end{align*}
 \end{frame}
 
 \section{Bibliography}
