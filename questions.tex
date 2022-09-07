@@ -1,0 +1,53 @@
+\documentclass[12pt, a4paper, oneside]{report}
+\usepackage[margin=3cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{MnSymbol}
+\usepackage{appendix}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+
+\title{Complex Exponentials}
+\author{R. Mok
+}
+\date{}
+\pagestyle{fancy}
+\fancyhead[L]{Complex Exponentials}
+\fancyfoot[C]{\thepage}
+
+\newcommand{\lines}{\hbox to \linewidth{\leaders\hbox to 4pt{\hss . \hss}\hfil}\vspace{0.2cm}}
+\begin{document}
+% \maketitle
+
+\section*{Exploring De Moivre's Theorem with DESMOS}
+Recall De Moivre's Theorem:
+\vspace{0.2cm}
+
+\noindent
+\fbox{\parbox{\textwidth}{
+    If $n$ is an integer, then \[ (r(\cos \theta + i \sin\theta))^n = r^n(\cos n\theta + i \sin n\theta) \]
+}}
+\vspace{0.2cm}
+
+\noindent Go to: \url{https://www.desmos.com/calculator/igqisujucx}
+\begin{enumerate}
+  \item What happens if $n$ is an integer?\\
+    \lines\\\lines\\\lines
+      \item What happens if $n$ is rational?\\
+      \lines\\\lines\\\lines
+    \begin{enumerate}
+      \item Explore what happens when the denominator is a prime number.\\
+      \lines\\\lines\\\lines
+      \item Explore what happens when the denominator is not prime.\\
+      \lines\\\lines\\\lines
+    \end{enumerate}
+  \item What happens if $n$ is irrational?\\
+    \lines\\\lines\\\lines
+
+  \item What happens if we change $r$ to a number greater than or less than $1$?\\
+    \lines\\\lines\\\lines
+\end{enumerate}
+
+
+\end{document}
